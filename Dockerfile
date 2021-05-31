@@ -11,5 +11,4 @@ COPY ./myapp/ /usr/app/
 WORKDIR /usr/app/
 RUN mvn package
 RUN cp ./target/hello-1.0.war /usr/local/tomcat/webapps/
-EXPOSE 8080
 CMD /usr/local/tomcat/bin/catalina.sh run
